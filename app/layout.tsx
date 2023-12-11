@@ -1,4 +1,4 @@
-import QueryProvider from "@/components/QueryProvider";
+import QueryProvider from "@/components/ReactQuery/QueryProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
