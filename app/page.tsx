@@ -1,16 +1,24 @@
 "use client";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import JustBox from "@/components/JustBox";
+import Link from "next/link";
 
 export default function Home() {
-    const queryClient = new QueryClient();
     return (
-        <QueryClientProvider client={queryClient}>
-            <main className="flex min-h-screen flex-col items-center justify-between w-full">
-                <h1>Home</h1>
-                <div className="w-full">
-                    <h1>Pages</h1>
-                </div>
-            </main>
-        </QueryClientProvider>
+        <main className="flex min-h-screen flex-col items-center  w-full bg-zinc-300 gap-4 text-center">
+            <h1>Home</h1>
+            <div className="">
+                <h1 className="text-xl gap-2 my-1  border-b-2 border-red-600">
+                    Pages
+                </h1>
+
+                <Link
+                    href="/example"
+                    className="p-1 bg-slate-400"
+                >
+                    Example
+                </Link>
+            </div>
+            <JustBox />
+        </main>
     );
 }
