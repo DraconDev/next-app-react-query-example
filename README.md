@@ -1,2 +1,2 @@
 ###
-Can't wrap body because can't apply "use client" to html
+Main layout is server comp, so make custom provider that uses client
